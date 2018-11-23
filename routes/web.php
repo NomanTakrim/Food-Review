@@ -11,6 +11,11 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('layout.master');
+})->name('home');
+
+
+Route::get('signup', 'UserController@signup')->name('signup');
+Route::get('signin', 'UserController@login')->name('signin');

@@ -12,6 +12,6 @@ class UserController extends Controller
     }
 
     public function login(Request $request){
-        return "Got You from login!!";
+        return view('singin');
     }
 }
