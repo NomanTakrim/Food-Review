@@ -1,0 +1,16 @@
+.navbar {
+    position: relative;
+    min-height: 50px;
+    /* margin-bottom: 20px; */
+    border: 1px solid transparent;
+}
+.btn-carousal {
+     color: #fff;
+     background-color: transparent;
+     border-color: #ccc;
+}
+.btn-carousal:hover {
+    color: #fff;
+    background-color: #c7c7cc;
+    border-color: #ccc;
+}
