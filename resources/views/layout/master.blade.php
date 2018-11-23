@@ -26,8 +26,8 @@
         </div>
         <ul class="nav navbar-nav">
             <li><a href="{{route('home')}}">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{route('about')}}">About</a></li>
+            <li><a href="{{route('contact')}}">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="{{route('signup')}}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

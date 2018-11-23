@@ -11,11 +11,11 @@
 |
 */
 
+//Home Controller Routes
+Route::get('/','HomeController@home')->name('home');
+Route::get('/contact','HomeController@contact')->name('contact');
+Route::get('/about','HomeController@about')->name('about');
 
-Route::get('/', function () {
-    return view('layout.master');
-})->name('home');
-
-
+//User Controller Routes
 Route::get('signup', 'UserController@signup')->name('signup');
 Route::get('signin', 'UserController@login')->name('signin');
