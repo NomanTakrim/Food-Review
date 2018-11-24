@@ -4,7 +4,10 @@
     <h3 class="col-md-12 col-md-push-2">User Registration</h3>
     <p class="col-md-12 col-md-push-2" style="margin-bottom: 30px;">user will be registered with valid email address and password</p>
     <hr>
-    <form class="form-horizontal" action="/action_page.php">
+    <form class="form-horizontal" action="{{route('saveuser')}}" method="post">
+
+        {{ csrf_field() }}
+
         <div class="form-group">
             <label class="control-label col-sm-2" for="name">Name:</label>
             <div class="col-sm-6">
