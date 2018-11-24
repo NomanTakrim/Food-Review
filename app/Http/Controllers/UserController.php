@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     public function signup(Request $request){
-
+        if ($request->session()->exists('user')){
+            return view('home');
+        }
         return view('signup');
     }
 
@@ -29,11 +31,16 @@ class UserController extends Controller
         //insert user to db
         DB::insert(' INSERT INTO usertable (name, email, password) VALUES (?, ?,?)', [$name, $email,$password]);
 
+        //session save user email
+        session(['user' => $email]);
         //redirect to home page
         return view('home');
     }
 
     public function login(Request $request){
+        if ($request->session()->exists('user')){
+            return view('home');
+        }
         return view('singin');
     }
 
@@ -57,6 +64,15 @@ class UserController extends Controller
             return view('singin');
         }
         //redirect to home page
+        session(['user' => $email]);
         return view('home');
+    }
+
+    public function logout(Request $request){
+        //delete session
+        //$request->session()->flush();
+        $request->session()->forget('user');
+        //redirect to login page
+        return view('singin');
     }
 }

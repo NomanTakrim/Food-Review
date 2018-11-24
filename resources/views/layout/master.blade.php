@@ -30,10 +30,11 @@
             <li><a href="{{route('about')}}">About</a></li>
             <li><a href="{{route('contact')}}">Contact</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{route('signup')}}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="{{route('signin')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
+        @if(session()->exists('user'))
+            @include('partial.registerduserrightnavlink')
+        @else
+            @include('partial.rightnavigationlink')
+        @endif
     </div>
 </nav>
 <div class="container">

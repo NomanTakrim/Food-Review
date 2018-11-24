@@ -21,3 +21,4 @@ Route::get('signup', 'UserController@signup')->name('signup');
 Route::post('signup', 'UserController@saveuser')->name('saveuser');
 Route::get('signin', 'UserController@login')->name('signin');
 Route::post('signin', 'UserController@userlogin')->name('userlogin');
+Route::get('logout', 'UserController@logout')->name('logout');
