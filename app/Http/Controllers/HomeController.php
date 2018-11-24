@@ -12,9 +12,7 @@ class HomeController extends Controller
     }
 
     public function contact(Request $request){
-        $users = DB::table('usertable')->get();
-        //return view('contact');
-        return $users;
+        return view('contact');
     }
 
     public function about(Request $request){
