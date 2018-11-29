@@ -2,7 +2,7 @@
 @section('title', 'User Registration')
 @section('content')
     <h3 class="col-md-12 col-md-push-2">User Registration</h3>
-    <p class="col-md-12 col-md-push-2" style="margin-bottom: 30px;">user will be registered with valid email address and password</p>
+    <p class="col-md-12 col-md-push-2" style="margin-bottom: 30px;"></p>
     <hr>
     <form class="form-horizontal" action="{{route('saveuser')}}" method="post">
 
@@ -49,4 +49,12 @@
             </div>
         </div>
     </form>
+
+<head>
+<style>
+body {background-color: cadetblue;}
+h1   {color: blue;}
+p    {color: white;}
+</style>
+</head>
 @endsection

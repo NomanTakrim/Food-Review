@@ -15,7 +15,7 @@
                 <img src="resources/assets/img/chinese.jpeg" style="width: 100%; height: 80vh;" alt="Chinese">
                 <div class="carousel-caption">
                     <h3><a href="#" class="btn btn-carousal">Chinese</a></h3>
-                    <p>LA is always so much fun!</p>
+                    <p>Checkout these Chinese Cuisine!</p>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@
                 <img src="resources/assets/img/bangladeshi.jpeg" style="width: 100%; height: 80vh;" alt="Bangladeshi">
                 <div class="carousel-caption">
                     <h3><a href="#" class="btn btn-carousal">Bangladeshi</a></h3>
-                    <p>Thank you, Bangladeshi!</p>
+                    <p>Mouth watering deshi foods!</p>
                 </div>
             </div>
 
@@ -31,7 +31,7 @@
                 <img src="resources/assets/img/indian.jpeg" style="width: 100%; height: 80vh;" alt="Indian">
                 <div class="carousel-caption">
                     <h3><a href="#" class="btn btn-carousal">Indian</a></h3>
-                    <p>We love the Big Apple!</p>
+                    <p>Indian Traditional Cuisine!</p>
                 </div>
             </div>
         </div>
@@ -46,4 +46,12 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+<head>
+<style>
+body {background-color: cadetblue;}
+h1   {color: blue;}
+p    {color: white;}
+</style>
+</head>
 @endsection
